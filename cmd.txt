@@ -1,0 +1,23 @@
+cd /usr/local/src/RouteFlow/rf-controller/build/src;./nox_core -v -i ptcp:6363 switch -d
+cd /usr/local/src/RouteFlow/rf-controller/build/src;./nox_core -v -i ptcp:6633 routeflowc -d
+./usr/local/src/RouteFlow/build/rf-server &
+lxc-start -n router1 -d
+lxc-start -n router2 -d
+lxc-start -n b1 -d
+lxc-start -n b2 -d
+ovs-openflowd --hw-desc=rfovs dp0  tcp:127.0.0.1:6633 --out-of-band --detach
+ifconfig dp0 up
+ovs-openflowd br0 tcp:127.0.0.1:6363 --out-of-band --detach
+ifconfig br0 up 192.168.1.1 netmask 255.255.255.0
+ovs-dpctl add-if dp0 router1.1
+ovs-dpctl add-if dp0 router1.2
+ovs-dpctl add-if dp0 router2.1
+ovs-dpctl add-if dp0 router2.2
+ovs-dpctl add-if br0 router1.0
+ovs-dpctl add-if br0 router2.0
+ovs-openflowd switch1 tcp:127.0.0.1:6633 --out-of-band --detach
+ovs-openflowd switch2 tcp:127.0.0.1:6633 --out-of-band --detach
+ovs-dpctl add-if switch1 b1.0
+ovs-dpctl add-if switch1 eth2
+ovs-dpctl add-if switch2 eth3
+ovs-dpctl add-if switch2 b2.0
