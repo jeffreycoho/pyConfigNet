@@ -11,7 +11,7 @@ def cmdNoxCore(noxPort, noxType):
 
 
 def runRfServer():
-    cmdString = '''./usr/local/src/RouteFlow/build/rf-server &'''
+    cmdString = '''/usr/local/src/RouteFlow/build/rf-server &'''
     os.system(cmdString)
     print cmdString
 
