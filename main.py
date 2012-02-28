@@ -2,6 +2,15 @@
 
 import sys,os
 
+import gflags
+Flags = gflags.FLAGS
+
+gflags.DEFINE_string('myflag', 'Mr. President', 'your name')
+
+x = file('config.txt')
+line = x.readlines()
+Flags(line)
+
 def cmdNoxCore(noxPort, noxType):
     cmdString = 'cd /usr/local/src/RouteFlow/rf-controller/build/src;' + \
             './nox_core -v -i ptcp:' + str(noxPort) + \
@@ -83,3 +92,5 @@ if __name__ == '__main__':
     for interface in switch2Interface:
         cmdOvsDpctl('switch2', interface)
 
+    print gflags.FLAGS.myflag
+        
