@@ -10,6 +10,7 @@ gflags.DEFINE_string('myflag', 'Mr. President', 'your name')
 x = file('config.txt')
 line = x.readlines()
 Flags(line)
+#Flags.ReadFlagsFromFiles('oh --flagfile=./config.txt --flagfile=./config.txt')
 
 def cmdNoxCore(noxPort, noxType):
     cmdString = 'cd /usr/local/src/RouteFlow/rf-controller/build/src;' + \

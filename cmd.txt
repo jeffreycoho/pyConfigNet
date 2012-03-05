@@ -1,6 +1,6 @@
 cd /usr/local/src/RouteFlow/rf-controller/build/src;./nox_core -v -i ptcp:6363 switch -d
 cd /usr/local/src/RouteFlow/rf-controller/build/src;./nox_core -v -i ptcp:6633 routeflowc -d
-./usr/local/src/RouteFlow/build/rf-server &
+/usr/local/src/RouteFlow/build/rf-server &
 lxc-start -n router1 -d
 lxc-start -n router2 -d
 lxc-start -n b1 -d
