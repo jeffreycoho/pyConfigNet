@@ -34,28 +34,28 @@
 					<ipAddress></ipAddress>
 					<ipv6Address></ipv6Address>
 					<mtu></mtu>
-					<status>active</active>
+					<status>active</status>
 				</interface>
 				<interface id="007">
 					<name>router1.2</name>
 					<ipAddress></ipAddress>
 					<ipv6Address></ipv6Address>
 					<mtu></mtu>
-					<status>active</active>
+					<status>active</status>
 				</interface>
 				<interface id="008">
 					<name>router2.1</name>
 					<ipAddress></ipAddress>
 					<ipv6Address></ipv6Address>
 					<mtu></mtu>
-					<status>active</active>
+					<status>active</status>
 				</interface>
 				<interface id="009">
 					<name>router2.2</name>
 					<ipAddress></ipAddress>
 					<ipv6Address></ipv6Address>
 					<mtu></mtu>
-					<status>active</active>
+					<status>active</status>
 				</interface>
 			</interfaces>
 			<software version="0.1"></software>
@@ -69,14 +69,14 @@
 					<ipAddress></ipAddress>
 					<ipv6Address></ipv6Address>
 					<mtu></mtu>
-					<status>active</active>
+					<status>active</status>
 				</interface>
 				<interface id="012">
 					<name>router2.0</name>
 					<ipAddress></ipAddress>
 					<ipv6Address></ipv6Address>
 					<mtu></mtu>
-					<status>active</active>
+					<status>active</status>
 				</interface>
 			</interfaces>
 			<software version="0.1"></software>
@@ -90,14 +90,14 @@
 					<ipAddress></ipAddress>
 					<ipv6Address></ipv6Address>
 					<mtu></mtu>
-					<status>active</active>
+					<status>active</status>
 				</interface>
 				<interface id="015">
 					<name>eth2</name>
 					<ipAddress></ipAddress>
 					<ipv6Address></ipv6Address>
 					<mtu></mtu>
-					<status>active</active>
+					<status>active</status>
 				</interface>
 			</interfaces>
 			<software version="0.1"></software>
@@ -111,14 +111,14 @@
 					<ipAddress></ipAddress>
 					<ipv6Address></ipv6Address>
 					<mtu></mtu>
-					<status>active</active>
+					<status>active</status>
 				</interface>
 				<interface id="018">
 					<name>b2.0</name>
 					<ipAddress></ipAddress>
 					<ipv6Address></ipv6Address>
 					<mtu></mtu>
-					<status>active</active>
+					<status>active</status>
 				</interface>
 			</interfaces>
 			<software version="0.1"></software>
