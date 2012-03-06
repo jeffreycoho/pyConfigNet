@@ -2,18 +2,6 @@
 
 <topology version="0.1">
     <nodes version="0.1">
-		<node id="001" type="host">
-			<name>router1</name>
-			<interfaces version="0.1"></interfaces>
-			<software version="0.1"></software>
-			<protocolStack version="0.1"></protocolStack>
-		</node>
-		<node id="002" type="host">
-			<name>router2</name>
-			<interfaces version="0.1"></interfaces>
-			<software version="0.1"></software>
-			<protocolStack version="0.1"></protocolStack>
-		</node>
 		<node id="003" type="host">
 			<name>b1</name>
 			<interfaces version="0.1"></interfaces>
@@ -23,62 +11,6 @@
 		<node id="004" type="host">
 			<name>b2</name>
 			<interfaces version="0.1"></interfaces>
-			<software version="0.1"></software>
-			<protocolStack version="0.1"></protocolStack>
-		</node>
-		<node id="005" type="openflowSwitch">
-			<name>dp0</name>
-			<interfaces version="0.1">
-				<interface id="006">
-					<name>router1.1</name>
-					<ipAddress></ipAddress>
-					<ipv6Address></ipv6Address>
-					<mtu></mtu>
-					<status>active</status>
-				</interface>
-				<interface id="007">
-					<name>router1.2</name>
-					<ipAddress></ipAddress>
-					<ipv6Address></ipv6Address>
-					<mtu></mtu>
-					<status>active</status>
-				</interface>
-				<interface id="008">
-					<name>router2.1</name>
-					<ipAddress></ipAddress>
-					<ipv6Address></ipv6Address>
-					<mtu></mtu>
-					<status>active</status>
-				</interface>
-				<interface id="009">
-					<name>router2.2</name>
-					<ipAddress></ipAddress>
-					<ipv6Address></ipv6Address>
-					<mtu></mtu>
-					<status>active</status>
-				</interface>
-			</interfaces>
-			<software version="0.1"></software>
-			<protocolStack version="0.1"></protocolStack>
-		</node>
-		<node id="010" type="openflowSwitch">
-			<name>br0</name>
-			<interfaces version="0.1">
-				<interface id="011">
-					<name>router1.0</name>
-					<ipAddress></ipAddress>
-					<ipv6Address></ipv6Address>
-					<mtu></mtu>
-					<status>active</status>
-				</interface>
-				<interface id="012">
-					<name>router2.0</name>
-					<ipAddress></ipAddress>
-					<ipv6Address></ipv6Address>
-					<mtu></mtu>
-					<status>active</status>
-				</interface>
-			</interfaces>
 			<software version="0.1"></software>
 			<protocolStack version="0.1"></protocolStack>
 		</node>
